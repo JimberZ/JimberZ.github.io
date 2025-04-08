@@ -23,14 +23,16 @@
     margin-left: 100px;
 }
 
+/* Move date inside content area */
 .timeline-date {
-    position: absolute;
-    width: 120px;
-    text-align: left;
-    left: -170px;
-    top: 15px;
+    width: auto;
     font-weight: bold;
     color: var(--primary-color);
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: rgba(74, 111, 165, 0.1);
+    border-radius: 4px;
 }
 
 /* Common logo styles */
@@ -111,13 +113,6 @@
 @media (max-width: 768px) {
     .timeline-item {
         margin-left: 80px;
-    }
-    
-    .timeline-date {
-        width: auto;
-        left: -80px;
-        top: 15px;
-        font-size: 0.85rem;
     }
     
     .timeline-logo {
