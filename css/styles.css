@@ -205,8 +205,8 @@ header nav ul li a:hover::after {
     position: absolute;
     width: 120px;
     text-align: left;
-    left: -140px;
-    top: 10px;
+    left: -170px;
+    top: 15px;
     font-weight: bold;
     color: var(--primary-color);
 }
@@ -443,8 +443,8 @@ footer {
     .timeline-date {
         width: auto;
         text-align: left;
-        left: -65px;
-        top: 10px;
+        left: -80px;
+        top: 15px;
         font-size: 0.85rem;
     }
     

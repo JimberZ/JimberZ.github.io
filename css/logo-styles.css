@@ -34,25 +34,37 @@
     color: var(--primary-color);
 }
 
+/* Common logo styles */
 .timeline-logo {
     position: absolute;
-    left: -95px;
+    left: -115px;
     top: 0;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     z-index: 2;
 }
 
+/* Work experience logos - rectangular */
+#experience .timeline:nth-of-type(2) .timeline-logo {
+    border-radius: 8px;
+}
+
+/* Education logos - circular */
+#experience .timeline:first-of-type .timeline-logo {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
 .timeline-logo img {
-    max-width: 85%;
-    max-height: 85%;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: contain;
 }
 
@@ -104,14 +116,20 @@
     }
     
     .timeline-logo {
-        left: -75px;
-        width: 55px;
-        height: 55px;
+        left: -85px;
+        width: 75px;
+        height: 60px;
+    }
+    
+    /* Circular education logos for mobile */
+    #experience .timeline:first-of-type .timeline-logo {
+        width: 70px;
+        height: 70px;
     }
     
     .timeline-logo img {
-        max-width: 40px;
-        max-height: 40px;
+        max-width: 90%;
+        max-height: 90%;
     }
     
     .timeline-content::after {
