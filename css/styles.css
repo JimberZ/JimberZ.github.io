@@ -190,20 +190,22 @@ header nav ul li a:hover::after {
     background-color: var(--primary-color);
     top: 0;
     bottom: 0;
-    left: 120px;
+    left: 50px;
     margin-left: -1px;
+    z-index: 1;
 }
 
 .timeline-item {
-    padding: 10px 40px 10px 160px;
     position: relative;
     margin-bottom: 30px;
+    margin-left: 80px;
+    padding-right: 40px;
 }
 
 .timeline-date {
     position: absolute;
     width: 120px;
-    text-align: right;
+    text-align: left;
     left: 0;
     top: 10px;
     font-weight: bold;
@@ -432,18 +434,20 @@ footer {
     }
     
     .timeline::after {
-        left: 31px;
+        left: 30px;
     }
     
     .timeline-item {
-        padding-left: 70px;
+        padding-left: 0;
+        padding-right: 20px;
+        margin-left: 60px;
     }
     
     .timeline-date {
         width: auto;
         text-align: left;
-        left: 70px;
-        top: -30px;
+        left: 0;
+        top: -25px;
         position: relative;
     }
     

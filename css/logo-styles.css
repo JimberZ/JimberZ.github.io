@@ -1,0 +1,120 @@
+/* Company Logo Styles for Timeline */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding-left: 100px; /* Increase left padding to make room for logos */
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 220px; /* Adjust the timeline position */
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 10px 40px 10px 260px; /* Increase left padding */
+    position: relative;
+    margin-bottom: 50px; /* Increase spacing between items */
+}
+
+.timeline-date {
+    position: absolute;
+    width: 120px;
+    text-align: right;
+    left: 100px; /* Adjust date position */
+    top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.timeline-logo {
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.timeline-logo img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.timeline-content {
+    padding: 25px;
+    background-color: white;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 100%;
+    top: 25px; /* Align with logo center */
+    background-color: white;
+    transform: rotate(45deg);
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 0;
+    }
+    
+    .timeline::after {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+    
+    .timeline-date {
+        width: auto;
+        left: 70px;
+        top: -25px;
+        text-align: left;
+    }
+    
+    .timeline-logo {
+        left: -60px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .timeline-logo img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    .timeline-content::after {
+        display: none;
+    }
+} 
