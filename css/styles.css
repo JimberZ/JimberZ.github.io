@@ -190,7 +190,7 @@ header nav ul li a:hover::after {
     background-color: var(--primary-color);
     top: 0;
     bottom: 0;
-    left: 50px;
+    left: 35px;
     margin-left: -1px;
     z-index: 1;
 }
@@ -198,15 +198,14 @@ header nav ul li a:hover::after {
 .timeline-item {
     position: relative;
     margin-bottom: 30px;
-    margin-left: 80px;
-    padding-right: 40px;
+    margin-left: 100px;
 }
 
 .timeline-date {
     position: absolute;
     width: 120px;
     text-align: left;
-    left: 0;
+    left: -140px;
     top: 10px;
     font-weight: bold;
     color: var(--primary-color);
@@ -434,21 +433,19 @@ footer {
     }
     
     .timeline::after {
-        left: 30px;
+        left: 15px;
     }
     
     .timeline-item {
-        padding-left: 0;
-        padding-right: 20px;
-        margin-left: 60px;
+        margin-left: 80px;
     }
     
     .timeline-date {
         width: auto;
         text-align: left;
-        left: 0;
-        top: -25px;
-        position: relative;
+        left: -65px;
+        top: 10px;
+        font-size: 0.85rem;
     }
     
     .timeline-content::after {

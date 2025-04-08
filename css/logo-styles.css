@@ -18,8 +18,9 @@
 }
 
 .timeline-item {
-    padding: 10px 40px 10px 260px; /* Increase left padding */
     position: relative;
+    padding-left: 20px;
+    margin-left: 100px;
     margin-bottom: 50px; /* Increase spacing between items */
 }
 
@@ -35,10 +36,10 @@
 
 .timeline-logo {
     position: absolute;
-    left: -80px;
+    left: -95px;
     top: 0;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,8 +51,8 @@
 }
 
 .timeline-logo img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 85%;
+    max-height: 85%;
     object-fit: contain;
 }
 
@@ -92,8 +93,7 @@
     }
     
     .timeline-item {
-        padding-left: 70px;
-        padding-right: 20px;
+        margin-left: 80px;
     }
     
     .timeline-date {
@@ -104,9 +104,9 @@
     }
     
     .timeline-logo {
-        left: -60px;
-        width: 45px;
-        height: 45px;
+        left: -75px;
+        width: 55px;
+        height: 55px;
     }
     
     .timeline-logo img {
