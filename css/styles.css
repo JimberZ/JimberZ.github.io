@@ -360,36 +360,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Awards & Titles Section */
-.awards-list ul, .titles-list ul {
-    padding-left: 20px;
-    list-style: disc;
-}
-
-.awards-list li, .titles-list li {
-    margin-bottom: 15px;
-    line-height: 1.6;
-    font-size: 1.05rem;
-}
-
-.awards-list, .titles-list {
-    margin-bottom: 40px;
-}
-
-#awards h3 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 10px;
-    display: inline-block;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    /* Add mobile-specific styles if needed */
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .section {
