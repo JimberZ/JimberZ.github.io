@@ -361,122 +361,33 @@ footer {
 }
 
 /* Awards & Titles Section */
-.awards-section, .titles-section {
+.awards-list ul, .titles-list ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.awards-list li, .titles-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.awards-list, .titles-list {
     margin-bottom: 40px;
 }
 
-.awards-section h3, .titles-section h3 {
-    margin-bottom: 25px;
+#awards h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
     color: var(--secondary-color);
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
     display: inline-block;
 }
 
-/* Awards Grid */
-.awards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.award-item {
-    display: flex;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    overflow: hidden;
-}
-
-.award-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.award-year {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 80px;
-    text-align: center;
-}
-
-.award-content {
-    padding: 15px;
-    flex: 1;
-}
-
-.award-content h4 {
-    margin: 0 0 8px 0;
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-}
-
-.award-content p {
-    margin: 0;
-    color: var(--text-light);
-    font-size: 0.9rem;
-}
-
-/* Titles Grid */
-.titles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.title-item {
-    display: flex;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.title-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.title-icon {
-    margin-right: 15px;
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-}
-
-.title-content {
-    flex: 1;
-}
-
-.title-content h4 {
-    margin: 0 0 8px 0;
-    color: var(--secondary-color);
-}
-
-.title-content p {
-    margin: 0;
-    color: var(--text-light);
-    font-size: 0.9rem;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .awards-grid, .titles-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .award-item, .title-item {
-        margin-bottom: 15px;
-    }
+    /* Add mobile-specific styles if needed */
 }
 
 /* Responsive Styles */
